@@ -259,3 +259,49 @@ select:focus,
     margin-top: 10px;
   }
 }
+
+/* --- Responsive Styles for VERY Small Screens --- */
+@media (max-width: 400px) {
+  body {
+    padding: 5px; /* Minimal body padding */
+    font-size: 0.9em; /* Slightly smaller again */
+  }
+
+  .container {
+    padding: 15px 18px; /* Further reduced padding */
+  }
+
+  h1 {
+    font-size: 1.6em; /* Smaller h1 */
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-size: 1.1em; /* Smaller h2 */
+    margin-bottom: 15px;
+  }
+
+  select,
+  .buttons {
+    padding: 10px 12px; /* Further reduced padding */
+    font-size: 0.85em;
+    margin-bottom: 15px;
+  }
+
+  .quiz-container .questions li {
+    padding: 12px 15px; /* Further reduced padding */
+  }
+
+  .quiz-container .questions li label {
+    font-size: 0.85em;
+  }
+
+  .quiz-container .questions li input[type="radio"] {
+    transform: scale(1); /* Normal size radio */
+    margin-right: 8px;
+  }
+
+  .quiz-settings .start-btn {
+    margin-top: 20px;
+  }
+}
