@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>Quiz App</h1>
+
+    
+    <div class="quiz-settings">
+      <h2>Select Your Preferences</h2>
+
+      <label for="category">Choose Category:</label>
+      <select id="category">
+        <option value="technology">Technology</option>
+        <option value="javascript">Javascript</option>
+        <option value="general knowledge">General Knowledge</option>
+        <option value="science">Science</option>
+        <option value="sports">Sports</option>
+        <option value="history">History</option>
+      </select>
+
+
+      <label for="difficulty">Choose Difficulty:</label>
+      <select id="difficulty">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+
+
+      <button class="buttons start-btn">Start Quiz</button>
+    </div>
+
+    <div class="quiz-container" style="display: none;">
+    <div class="timer">Time Left: <span id="timer">10</span> seconds</div>
+
+      <p class="questions"></p>
+
+
+      <button class="buttons next-btn">Next Question</button>
+      <button class="buttons end-quiz-btn">End Quiz</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

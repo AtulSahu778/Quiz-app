@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* --- Keyframes for Animations --- */
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes fadeInScaleUp {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes pulseGlow {
+  0% { box-shadow: 0 0 5px rgba(150, 150, 255, 0.3); }
+  50% { box-shadow: 0 0 15px rgba(150, 150, 255, 0.6); }
+  100% { box-shadow: 0 0 5px rgba(150, 150, 255, 0.3); }
+}
+
+/* --- Base Styles --- */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0a0a2a, #1f1f4f, #3a1f5f, #0a0a2a);
+  background-size: 300% 300%; /* Needed for gradient animation */
+  color: #e0e0ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+  animation: gradientShift 20s ease infinite; /* Slow background shift */
+}
+
+.container {
+  background: rgba(15, 15, 40, 0.75); /* Slightly darker, more opaque */
+  backdrop-filter: blur(12px) saturate(150%);
+  border: 1px solid rgba(200, 200, 255, 0.15);
+  padding: 35px 45px;
+  border-radius: 20px; /* Smoother corners */
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+  width: 100%;
+  max-width: 650px;
+  text-align: center;
+  animation: fadeInScaleUp 0.8s ease-out forwards; /* Load-in animation */
+}
+
+h1 {
+  color: #b0b0ff; /* Slightly softer purple */
+  margin-bottom: 35px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-shadow: 0 0 8px rgba(176, 176, 255, 0.3);
+}
+
+h2 {
+  color: #d0d0ff;
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+
+/* --- Form Elements & Buttons --- */
+.quiz-settings label,
+.quiz-container label {
+  display: block;
+  margin: 18px 0 7px;
+  font-weight: 400;
+  color: #d0d0ff;
+  text-align: left;
+}
+
+select,
+.buttons {
+  width: 100%;
+  padding: 14px 18px;
+  margin-bottom: 22px;
+  border-radius: 10px;
+  border: 1px solid rgba(120, 120, 220, 0.6);
+  background-color: rgba(20, 20, 50, 0.85);
+  color: #e8e8ff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+select:focus,
+.buttons:focus {
+  outline: none;
+  border-color: rgba(150, 150, 255, 0.8);
+  box-shadow: 0 0 8px rgba(150, 150, 255, 0.5); /* Focus glow */
+}
+
+.buttons {
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  background-color: rgba(70, 70, 170, 0.85);
+  border: 1px solid rgba(90, 90, 190, 0.7);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.buttons:hover {
+  background-color: rgba(90, 90, 190, 0.95);
+  border-color: rgba(120, 120, 220, 0.9);
+  transform: translateY(-2px); /* Slight lift on hover */
+  box-shadow: 0 6px 20px rgba(90, 90, 220, 0.4);
+}
+
+.buttons:active {
+    transform: translateY(0px); /* Press down effect */
+    box-shadow: 0 3px 10px rgba(90, 90, 220, 0.3);
+}
+
+/* --- Quiz Area Styling --- */
+.quiz-container .timer {
+    font-size: 0.9em;
+    color: #ffdddd;
+    margin-bottom: 15px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.quiz-container .questions h2 {
+    margin-bottom: 15px;
+    color: #e8e8ff;
+}
+
+.quiz-container .questions ul {
+  list-style: none;
+  padding: 0;
+  margin: 25px 0;
+  text-align: left;
+}
+
+.quiz-container .questions li {
+  margin-bottom: 15px;
+  background: rgba(35, 35, 70, 0.75);
+  padding: 18px 20px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.quiz-container .questions li label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin: 0;
+  color: #e8e8ff;
+  transition: color 0.3s ease;
+}
+
+.quiz-container .questions li:hover {
+  background-color: rgba(55, 55, 100, 0.85);
+  transform: scale(1.02); /* Slightly enlarge on hover */
+}
+
+.quiz-container .questions li input[type="radio"] {
+  margin-right: 12px;
+  accent-color: #b0b0ff;
+  transform: scale(1.3);
+  cursor: pointer;
+}
+
+/* --- Button Specific Margins --- */
+.next-btn {
+    margin-top: 15px;
+}
+
+.end-quiz-btn {
+    margin-top: 10px;
+    margin-bottom: 0; /* Remove bottom margin if it's the last element */
+    background-color: rgba(180, 50, 80, 0.8); /* Different color for end */
+    border-color: rgba(200, 70, 100, 0.7);
+}
+
+.end-quiz-btn:hover {
+    background-color: rgba(200, 70, 100, 0.9);
+    border-color: rgba(220, 90, 120, 0.9);
+    box-shadow: 0 6px 20px rgba(200, 80, 110, 0.4);
+}
+
+.quiz-settings .start-btn {
+  margin-top: 35px;
+  animation: pulseGlow 2.5s infinite ease-in-out; /* Make start button pulse */
+}
