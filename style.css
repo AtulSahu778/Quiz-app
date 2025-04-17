@@ -193,3 +193,69 @@ select:focus,
   margin-top: 35px;
   animation: pulseGlow 2.5s infinite ease-in-out; /* Make start button pulse */
 }
+
+/* --- Responsive Styles for Smaller Screens --- */
+@media (max-width: 600px) {
+  body {
+    padding: 10px; /* Less padding on small screens */
+    font-size: 0.95em; /* Slightly smaller base font */
+  }
+
+  .container {
+    padding: 20px 25px; /* Reduced padding */
+    max-width: 95%; /* Allow container to take more width */
+  }
+
+  h1 {
+    font-size: 1.8em; /* Smaller heading */
+    margin-bottom: 25px;
+  }
+
+  h2 {
+    font-size: 1.2em; /* Smaller subheading */
+    margin-bottom: 20px;
+  }
+
+  .quiz-settings label,
+  .quiz-container label {
+    font-size: 0.9em;
+    margin: 12px 0 5px;
+  }
+
+  select,
+  .buttons {
+    padding: 12px 15px; /* Reduced padding */
+    font-size: 0.9em;
+    margin-bottom: 18px;
+  }
+
+  .quiz-container .timer {
+      font-size: 0.85em;
+  }
+
+  .quiz-container .questions h2 {
+      font-size: 1.1em;
+  }
+
+  .quiz-container .questions li {
+    padding: 15px 18px; /* Reduced padding */
+  }
+
+  .quiz-container .questions li label {
+    font-size: 0.9em; /* Smaller option text */
+  }
+
+  .quiz-container .questions li input[type="radio"] {
+    transform: scale(1.1); /* Slightly smaller radio */
+    margin-right: 10px;
+  }
+
+  .quiz-settings .start-btn {
+    margin-top: 25px;
+  }
+
+  .next-btn,
+  .end-quiz-btn {
+    margin-top: 10px;
+  }
+}
