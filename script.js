@@ -7,200 +7,179 @@ const questions = [
       answer: 2
     },
     {
-        category: 'javascript',
-        difficulty: 'easy',
-        question: 'Which keyword is used to declare a constant in JavaScript?',
-        options: ['var', 'let', 'const', 'define'],
-        answer: 3
-      },
-      {
-        category: 'javascript',
-        difficulty: 'medium',
-        question: 'What will the following code output? console.log(typeof null);',
-        options: ['null', 'object', 'undefined', 'string'],
-        answer: 1
-      },
-      {
-        category: 'javascript',
-        difficulty: 'easy',
-        question: 'Which method converts a JSON string into a JavaScript object?',
-        options: ['JSON.parse()', 'JSON.stringify()', 'JSON.object()', 'JSON.toJS()'],
-        answer: 0
-      },
-      {
-        category: 'javascript',
-        difficulty: 'medium',
-        question: 'Which built-in method returns the string representation of the number?',
-        options: ['toString()', 'toValue()', 'getString()', 'String()'],
-        answer: 0
-      },
-      {
-        category: 'javascript',
-        difficulty: 'hard',
-        question: 'What is the result of 0.1 + 0.2 === 0.3 in JavaScript?',
-        options: ['true', 'false', 'undefined', 'NaN'],
-        answer: 1
-      },
-      {
-        category: 'javascript',
-        difficulty: 'easy',
-        question: 'What does DOM stand for?',
-        options: ['Document Object Model', 'Data Object Method', 'Document Oriented Model', 'Display Object Management'],
-        answer: 0
-      },
-      {
-        category: 'javascript',
-        difficulty: 'medium',
-        question: 'Which symbol is used for single-line comments in JavaScript?',
-        options: ['//', '/* */', '#', '--'],
-        answer: 0
-      },
-      {
-        category: 'javascript',
-        difficulty: 'hard',
-        question: 'What is a closure in JavaScript?',
-        options: ['An object with private properties', 'A function inside another function that can access its variables', 'A loop condition', 'A data structure'],
-        answer: 1
-      },
-      {
-        category: 'javascript',
-        difficulty: 'easy',
-        question: 'Which company developed JavaScript?',
-        options: ['Microsoft', 'Sun Microsystems', 'Netscape', 'IBM'],
-        answer: 2
-      },
-      {
-        category: 'javascript',
-        difficulty: 'medium',
-        question: 'What does the Array.prototype.map() method do?',
-        options: ['Filters the array', 'Reduces the array to a single value', 'Transforms each element and returns a new array', 'Sorts the array'],
-        answer: 2
-      },
-      {
-        category: 'technology',
-        difficulty: 'easy',
-        question: 'What does CPU stand for?',
-        options: ['Central Process Unit', 'Central Processing Unit', 'Computer Personal Unit', 'Central Peripheral Unit'],
-        answer: 1
-      },
-      {
-        category: 'technology',
-        difficulty: 'medium',
-        question: 'Which company developed the Linux operating system?',
-        options: ['Microsoft', 'IBM', 'Linus Torvalds', 'Apple'],
-        answer: 2
-      },
-      {
-        category: 'technology',
-        difficulty: 'hard',
-        question: 'What protocol is primarily used to send email?',
-        options: ['HTTP', 'FTP', 'SMTP', 'SNMP'],
-        answer: 2
-      },
-      {
-        category: 'sports',
-        difficulty: 'easy',
-        question: 'How many players are there in a football (soccer) team?',
-        options: ['9', '10', '11', '12'],
-        answer: 2
-      },
-      {
-        category: 'sports',
-        difficulty: 'medium',
-        question: 'In which country were the first Olympic Games held?',
-        options: ['Italy', 'Greece', 'France', 'USA'],
-        answer: 1
-      },
-      {
-        category: 'sports',
-        difficulty: 'hard',
-        question: 'Which cricketer has scored the most international runs?',
-        options: ['Ricky Ponting', 'Virat Kohli', 'Brian Lara', 'Sachin Tendulkar'],
-        answer: 3
-      },
-      {
-        category: 'history',
-        difficulty: 'easy',
-        question: 'Who was the first President of the United States?',
-        options: ['Abraham Lincoln', 'George Washington', 'John Adams', 'Thomas Jefferson'],
-        answer: 1
-      },
-      {
-        category: 'history',
-        difficulty: 'medium',
-        question: 'When did World War II end?',
-        options: ['1940', '1943', '1945', '1947'],
-        answer: 2
-      },
-      {
-        category: 'history',
-        difficulty: 'hard',
-        question: 'The Great Wall of China was built to protect against which group?',
-        options: ['Japanese', 'Mongols', 'Romans', 'Vikings'],
-        answer: 1
-      },
-      {
-        category: 'science',
-        difficulty: 'easy',
-        question: 'What planet is known as the Red Planet?',
-        options: ['Earth', 'Jupiter', 'Mars', 'Saturn'],
-        answer: 2
-      },
-      {
-        category: 'science',
-        difficulty: 'medium',
-        question: 'What is the chemical symbol for water?',
-        options: ['O2', 'H2O', 'CO2', 'NaCl'],
-        answer: 1
-      },
-      {
-        category: 'science',
-        difficulty: 'hard',
-        question: 'What is the powerhouse of the cell?',
-        options: ['Nucleus', 'Ribosome', 'Mitochondria', 'Chloroplast'],
-        answer: 2
-      },
-      {
-        category: 'general knowledge',
-        difficulty: 'easy',
-        question: 'How many continents are there in the world?',
-        options: ['5', '6', '7', '8'],
-        answer: 2
-      },
-      {
-        category: 'general knowledge',
-        difficulty: 'medium',
-        question: 'What is the capital city of Canada?',
-        options: ['Toronto', 'Vancouver', 'Ottawa', 'Montreal'],
-        answer: 2
-      },
-      {
-        category: 'general knowledge',
-        difficulty: 'hard',
-        question: 'Which year did the Titanic sink?',
-        options: ['1910', '1912', '1914', '1916'],
-        answer: 1
-      },
+      category: 'javascript',
+      difficulty: 'medium',
+      question: 'What will the following code output? console.log(typeof null);',
+      options: ['null', 'object', 'undefined', 'string'],
+      answer: 1
+    },
+    {
+      category: 'javascript',
+      difficulty: 'easy',
+      question: 'Which method converts a JSON string into a JavaScript object?',
+      options: ['JSON.parse()', 'JSON.stringify()', 'JSON.object()', 'JSON.toJS()'],
+      answer: 0
+    },
+    {
+      category: 'javascript',
+      difficulty: 'medium',
+      question: 'Which built-in method returns the string representation of the number?',
+      options: ['toString()', 'toValue()', 'getString()', 'String()'],
+      answer: 0
+    },
+    {
+      category: 'javascript',
+      difficulty: 'hard',
+      question: 'What is the result of 0.1 + 0.2 === 0.3 in JavaScript?',
+      options: ['true', 'false', 'undefined', 'NaN'],
+      answer: 1
+    },
+    {
+      category: 'javascript',
+      difficulty: 'easy',
+      question: 'What does DOM stand for?',
+      options: ['Document Object Model', 'Data Object Method', 'Document Oriented Model', 'Display Object Management'],
+      answer: 0
+    },
+    {
+      category: 'javascript',
+      difficulty: 'medium',
+      question: 'Which symbol is used for single-line comments in JavaScript?',
+      options: ['//', '/* */', '#', '--'],
+      answer: 0
+    },
+    {
+      category: 'javascript',
+      difficulty: 'hard',
+      question: 'What is a closure in JavaScript?',
+      options: ['An object with private properties', 'A function inside another function that can access its variables', 'A loop condition', 'A data structure'],
+      answer: 1
+    },
+    {
+      category: 'javascript',
+      difficulty: 'easy',
+      question: 'Which company developed JavaScript?',
+      options: ['Microsoft', 'Sun Microsystems', 'Netscape', 'IBM'],
+      answer: 2
+    },
+    {
+      category: 'javascript',
+      difficulty: 'medium',
+      question: 'What does the Array.prototype.map() method do?',
+      options: ['Filters the array', 'Reduces the array to a single value', 'Transforms each element and returns a new array', 'Sorts the array'],
+      answer: 2
+    },
+    {
+      category: 'technology',
+      difficulty: 'easy',
+      question: 'What does CPU stand for?',
+      options: ['Central Process Unit', 'Central Processing Unit', 'Computer Personal Unit', 'Central Peripheral Unit'],
+      answer: 1
+    },
+    {
+      category: 'technology',
+      difficulty: 'medium',
+      question: 'Which company developed the Linux operating system?',
+      options: ['Microsoft', 'IBM', 'Linus Torvalds', 'Apple'],
+      answer: 2
+    },
+    {
+      category: 'technology',
+      difficulty: 'hard',
+      question: 'What protocol is primarily used to send email?',
+      options: ['HTTP', 'FTP', 'SMTP', 'SNMP'],
+      answer: 2
+    },
+    {
+      category: 'sports',
+      difficulty: 'easy',
+      question: 'How many players are there in a football (soccer) team?',
+      options: ['9', '10', '11', '12'],
+      answer: 2
+    },
+    {
+      category: 'sports',
+      difficulty: 'medium',
+      question: 'In which country were the first Olympic Games held?',
+      options: ['Italy', 'Greece', 'France', 'USA'],
+      answer: 1
+    },
+    {
+      category: 'sports',
+      difficulty: 'hard',
+      question: 'Which cricketer has scored the most international runs?',
+      options: ['Ricky Ponting', 'Virat Kohli', 'Brian Lara', 'Sachin Tendulkar'],
+      answer: 3
+    },
+    {
+      category: 'history',
+      difficulty: 'easy',
+      question: 'Who was the first President of the United States?',
+      options: ['Abraham Lincoln', 'George Washington', 'John Adams', 'Thomas Jefferson'],
+      answer: 1
+    },
+    {
+      category: 'history',
+      difficulty: 'medium',
+      question: 'When did World War II end?',
+      options: ['1940', '1943', '1945', '1947'],
+      answer: 2
+    },
+    {
+      category: 'history',
+      difficulty: 'hard',
+      question: 'The Great Wall of China was built to protect against which group?',
+      options: ['Japanese', 'Mongols', 'Romans', 'Vikings'],
+      answer: 1
+    },
+    {
+      category: 'science',
+      difficulty: 'easy',
+      question: 'What planet is known as the Red Planet?',
+      options: ['Earth', 'Jupiter', 'Mars', 'Saturn'],
+      answer: 2
+    },
+    {
+      category: 'science',
+      difficulty: 'medium',
+      question: 'What is the chemical symbol for water?',
+      options: ['O2', 'H2O', 'CO2', 'NaCl'],
+      answer: 1
+    },
+    {
+      category: 'science',
+      difficulty: 'hard',
+      question: 'What is the powerhouse of the cell?',
+      options: ['Nucleus', 'Ribosome', 'Mitochondria', 'Chloroplast'],
+      answer: 2
+    },
+    {
+      category: 'general knowledge',
+      difficulty: 'easy',
+      question: 'How many continents are there in the world?',
+      options: ['5', '6', '7', '8'],
+      answer: 2
+    },
+    {
+      category: 'general knowledge',
+      difficulty: 'medium',
+      question: 'What is the capital city of Canada?',
+      options: ['Toronto', 'Vancouver', 'Ottawa', 'Montreal'],
+      answer: 2
+    },
+    {
+      category: 'general knowledge',
+      difficulty: 'hard',
+      question: 'Which year did the Titanic sink?',
+      options: ['1910', '1912', '1914', '1916'],
+      answer: 1
+    },
     {
       category: 'javascript',
       difficulty: 'easy',
       question: 'How do you create a function in JavaScript?',
       options: ['function myFunc()', 'def myFunc()', 'create function myFunc()', 'function:myFunc()'],
       answer: 0
-    },
-    {
-      category: 'javascript',
-      difficulty: 'easy',
-      question: 'Which company developed JavaScript?',
-      options: ['Microsoft', 'Netscape', 'Google', 'Oracle'],
-      answer: 1
-    },
-    {
-      category: 'javascript',
-      difficulty: 'easy',
-      question: 'What is the output of: console.log(typeof null);',
-      options: ['null', 'object', 'undefined', 'boolean'],
-      answer: 1
     },
     {
       category: 'javascript',
@@ -254,21 +233,9 @@ const questions = [
     {
       category: 'javascript',
       difficulty: 'medium',
-      question: 'What is the result of 3 + "3" in JavaScript?',
+      question: 'What is the result of 3 + \"3\" in JavaScript?',
       options: ['6', '33', 'NaN', 'TypeError'],
       answer: 1
-    },
-    {
-      category: 'javascript',
-      difficulty: 'medium',
-      question: 'What is a closure in JavaScript?',
-      options: [
-        'A function having access to its outer function scope',
-        'A function that returns itself',
-        'A block that executes multiple times',
-        'A method to close browser tabs'
-      ],
-      answer: 0
     },
     {
       category: 'javascript',
@@ -285,7 +252,7 @@ const questions = [
     {
       category: 'javascript',
       difficulty: 'medium',
-      question: 'What is the purpose of the "use strict" directive?',
+      question: 'What is the purpose of the \"use strict\" directive?',
       options: [
         'Enable newer syntax',
         'Prevent use of undeclared variables',
@@ -326,20 +293,13 @@ const questions = [
       category: 'javascript',
       difficulty: 'hard',
       question: 'What will this return? console.log([] + {});',
-      options: ['"[object Object]"', '{}', 'NaN', '[object Object]'],
+      options: ['\"[object Object]\"', '{}', 'NaN', '[object Object]'],
       answer: 3
     },
     {
       category: 'javascript',
       difficulty: 'hard',
-      question: 'What is the output of: console.log(0.1 + 0.2 === 0.3)?',
-      options: ['true', 'false', 'undefined', 'error'],
-      answer: 1
-    },
-    {
-      category: 'javascript',
-      difficulty: 'hard',
-      question: 'What does the "this" keyword refer to in a regular function?',
+      question: 'What does the \"this\" keyword refer to in a regular function?',
       options: ['Global object', 'Parent function', 'Window object', 'Depends on how the function is called'],
       answer: 3
     },
@@ -366,7 +326,7 @@ const questions = [
       category: 'javascript',
       difficulty: 'hard',
       question: 'Which of the following is NOT a falsy value?',
-      options: ['0', '""', 'undefined', '"false"'],
+      options: ['0', '\"\"', 'undefined', '\"false\"'],
       answer: 3
     },
     {
@@ -398,7 +358,7 @@ const questions = [
     {
       category: 'javascript',
       difficulty: 'hard',
-      question: "Which one is true about JavaScript's event loop?",
+      question: "Which one is true about JavaScript\'s event loop?",
       options: [
         'It runs tasks sequentially from a stack.',
         'It pauses execution during async operations.',
@@ -410,15 +370,8 @@ const questions = [
     {
         category: 'sports',
         difficulty: 'easy',
-        question: 'Which sport is known as the "king of sports"?',
+        question: 'Which sport is known as the \"king of sports\"?',
         options: ['Basketball', 'Football', 'Tennis', 'Cricket'],
-        answer: 1
-      },
-      {
-        category: 'sports',
-        difficulty: 'easy',
-        question: 'In which country did the Olympic Games originate?',
-        options: ['USA', 'Greece', 'Rome', 'China'],
         answer: 1
       },
       {
@@ -427,13 +380,6 @@ const questions = [
         question: 'What is the highest score in a single basketball game?',
         options: ['80', '100', '120', '150'],
         answer: 1
-      },
-      {
-        category: 'sports',
-        difficulty: 'easy',
-        question: 'How many players are there on a soccer team?',
-        options: ['7', '9', '10', '11'],
-        answer: 3
       },
       {
         category: 'sports',
@@ -508,16 +454,9 @@ const questions = [
       {
         category: 'sports',
         difficulty: 'hard',
-        question: 'What sport does the term "hat-trick" originate from?',
+        question: 'What sport does the term \"hat-trick\" originate from?',
         options: ['Football', 'Hockey', 'Cricket', 'Tennis'],
         answer: 2
-      },
-      {
-        category: 'history',
-        difficulty: 'easy',
-        question: 'Who was the first president of the United States?',
-        options: ['George Washington', 'Abraham Lincoln', 'Thomas Jefferson', 'John Adams'],
-        answer: 0
       },
       {
         category: 'history',
@@ -529,23 +468,9 @@ const questions = [
       {
         category: 'history',
         difficulty: 'easy',
-        question: 'When did World War II end?',
-        options: ['1940', '1945', '1950', '1955'],
-        answer: 1
-      },
-      {
-        category: 'history',
-        difficulty: 'easy',
         question: 'Who was the first man to walk on the moon?',
         options: ['Buzz Aldrin', 'Neil Armstrong', 'Yuri Gagarin', 'Michael Collins'],
         answer: 1
-      },
-      {
-        category: 'history',
-        difficulty: 'easy',
-        question: 'In which year did the Titanic sink?',
-        options: ['1912', '1910', '1920', '1930'],
-        answer: 0
       },
       {
         category: 'history',
@@ -634,7 +559,7 @@ const questions = [
       {
         category: 'general knowledge',
         difficulty: 'easy',
-        question: 'Who wrote the play "Romeo and Juliet"?',
+        question: 'Who wrote the play \"Romeo and Juliet\"?',
         options: ['Charles Dickens', 'Mark Twain', 'William Shakespeare', 'Jane Austen'],
         answer: 2
       },
@@ -664,13 +589,6 @@ const questions = [
         difficulty: 'medium',
         question: 'Which country is known as the Land of the Rising Sun?',
         options: ['China', 'Japan', 'Thailand', 'South Korea'],
-        answer: 1
-      },
-      {
-        category: 'general knowledge',
-        difficulty: 'medium',
-        question: 'Who was the first President of the United States?',
-        options: ['Abraham Lincoln', 'George Washington', 'Thomas Jefferson', 'John Adams'],
         answer: 1
       },
       {
@@ -721,20 +639,6 @@ const questions = [
         question: 'In which city would you find the famous landmark, the Eiffel Tower?',
         options: ['London', 'Paris', 'Rome', 'New York'],
         answer: 1
-      },
-      {
-        category: 'science',
-        difficulty: 'easy',
-        question: 'What is the chemical symbol for water?',
-        options: ['H2O', 'CO2', 'O2', 'H2'],
-        answer: 0
-      },
-      {
-        category: 'science',
-        difficulty: 'easy',
-        question: 'What planet is known as the Red Planet?',
-        options: ['Mars', 'Venus', 'Jupiter', 'Saturn'],
-        answer: 0
       },
       {
         category: 'science',
@@ -791,13 +695,6 @@ const questions = [
         question: 'Which planet is closest to the Sun?',
         options: ['Venus', 'Earth', 'Mercury', 'Mars'],
         answer: 2
-      },
-      {
-        category: 'science',
-        difficulty: 'medium',
-        question: 'What is the powerhouse of the cell?',
-        options: ['Nucleus', 'Mitochondria', 'Ribosome', 'Chloroplast'],
-        answer: 1
       },
       {
         category: 'science',
@@ -907,7 +804,7 @@ const questions = [
       {
         category: 'science',
         difficulty: 'hard',
-        question: "What is Avogadro's number?",
+        question: "What is Avogadro\'s number?",
         options: ['6.02 x 10^23', '3.14', '9.81', '1.67 x 10^-27'],
         answer: 0
       },
@@ -935,13 +832,6 @@ const questions = [
       {
         category: 'technology',
         difficulty: 'easy',
-        question: 'What does "CPU" stand for?',
-        options: ['Central Processing Unit', 'Computer Personal Unit', 'Central Print Utility', 'Core Programming Unit'],
-        answer: 0
-      },
-      {
-        category: 'technology',
-        difficulty: 'easy',
         question: 'Which company developed the Windows operating system?',
         options: ['Apple', 'Microsoft', 'Google', 'IBM'],
         answer: 1
@@ -956,7 +846,7 @@ const questions = [
       {
         category: 'technology',
         difficulty: 'easy',
-        question: 'What does "Wi-Fi" enable?',
+        question: 'What does \"Wi-Fi\" enable?',
         options: ['Printing', 'Wireless Internet Connection', 'Charging', 'Cooling'],
         answer: 1
       },
@@ -970,7 +860,7 @@ const questions = [
       {
         category: 'technology',
         difficulty: 'easy',
-        question: 'What is the full form of "USB"?',
+        question: 'What is the full form of \"USB\"?',
         options: ['Universal System Bus', 'Universal Serial Bus', 'United Service Band', 'Unit Standard Bus'],
         answer: 1
       },
@@ -984,7 +874,7 @@ const questions = [
       {
         category: 'technology',
         difficulty: 'easy',
-        question: 'What is the shortcut for "copy" on most computers?',
+        question: 'What is the shortcut for \"copy\" on most computers?',
         options: ['Ctrl + C', 'Ctrl + V', 'Ctrl + Z', 'Ctrl + X'],
         answer: 0
       },
@@ -1019,7 +909,7 @@ const questions = [
       {
         category: 'technology',
         difficulty: 'medium',
-        question: 'What does "HTML" stand for?',
+        question: 'What does \"HTML\" stand for?',
         options: ['Hyper Trainer Marking Language', 'HyperText Markup Language', 'HighText Machine Language', 'Hyperlink and Text Marking Language'],
         answer: 1
       },
@@ -1047,7 +937,7 @@ const questions = [
       {
         category: 'technology',
         difficulty: 'medium',
-        question: 'What does "AI" stand for in tech?',
+        question: 'What does \"AI\" stand for in tech?',
         options: ['Automatic Input', 'Artificial Intelligence', 'Advanced Internet', 'Applied Interface'],
         answer: 1
       },
@@ -1103,7 +993,7 @@ const questions = [
       {
         category: 'technology',
         difficulty: 'hard',
-        question: 'What does "URL" stand for?',
+        question: 'What does \"URL\" stand for?',
         options: ['Unified Resource Locator', 'Uniform Resource Locator', 'Universal Response Link', 'User Resource Link'],
         answer: 1
       },
@@ -1159,14 +1049,14 @@ const questions = [
       {
         category: 'technology',
         difficulty: 'medium',
-        question: 'What does "IoT" stand for?',
+        question: 'What does \"IoT\" stand for?',
         options: ['Internet of Tools', 'Internet of Things', 'Input of Technology', 'Inside Operating Things'],
         answer: 1
       },
       {
         category: 'technology',
         difficulty: 'medium',
-        question: 'What does the ".com" domain mean?',
+        question: 'What does the \".com\" domain mean?',
         options: ['Company', 'Community', 'Commercial', 'Communication'],
         answer: 2
       },
@@ -1194,7 +1084,7 @@ const questions = [
       {
         category: 'technology',
         difficulty: 'hard',
-        question: 'What is a "bit" short for in computing?',
+        question: 'What is a \"bit\" short for in computing?',
         options: ['Binary Digit', 'Bitrate', 'Binary Transfer', 'Byte Item'],
         answer: 0
       },
